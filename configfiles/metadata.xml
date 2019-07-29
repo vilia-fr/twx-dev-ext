@@ -1,0 +1,22 @@
+<Entities>
+	<ExtensionPackages>
+		<ExtensionPackage name="DevelopExtension" description="Development Extension" vendor="Vilia" packageVersion="1.0.0" minimumThingWorxVersion="6.6.0" />
+	</ExtensionPackages>
+	<Resources>
+		<Resource name="DevelopFunctions" description="Development library" className="fr.vilia.twx.Development" aspect.isCreatable="false">
+			<RunTimePermissions>
+				<Permissions resourceName="*">
+					<ServiceInvoke>
+						<Principal isPermitted="true" principalName="Administrators" type="Group" />
+						<Principal isPermitted="true" principalName="Developers" type="Group" />
+						<Principal isPermitted="true" principalName="Users" type="Group" />
+					</ServiceInvoke>
+				</Permissions>
+			</RunTimePermissions>
+			<JarResources>
+				<FileResource type="JAR" file="thingworx-develop-extension.jar" description="Development Resource JAR" />
+				<FileResource description="Gson JAR" file="gson-2.8.0.jar" type="JAR" />
+			</JarResources>
+		</Resource>
+	</Resources>
+</Entities>
