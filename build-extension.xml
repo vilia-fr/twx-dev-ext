@@ -34,6 +34,7 @@
 	<path id="jar.classpath"> 
         <pathelement location="${build.dir}"/> 
     	<fileset dir="${basedir}\twx-lib" includes="*.jar"/>
+    	<fileset dir="${basedir}\twx-impl" includes="*.jar"/>
 	    <fileset dir="${basedir}\lib" includes="*.jar"/>
     </path> 
 	 
