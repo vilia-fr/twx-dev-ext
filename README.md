@@ -36,7 +36,7 @@ so it shouldn't conflict with the standard ThingWorx distribution.
 
 ## Building
 
-1. Copy JAR files from ThingWorx Extension SDK into /twx-lib directory;
+1. Copy `thingworx-*.jar` JAR files from ThingWorx installation into `/twx-lib` directory;
 2. Execute `ant -f build-extension.xml`
 
 ## Disclaimer

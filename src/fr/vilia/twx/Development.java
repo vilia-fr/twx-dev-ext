@@ -112,7 +112,7 @@ public class Development extends Resource {
 			// TODO: This doesn't work. For some reason we don't have a getter for parameters, onyl setter.
 			FunctionDefinitionCollection services = lib.getFunctionDefinitions();
 			for (FunctionDefinition def: services.values()) {
-				JSONObject json = def.toJSON();
+				JSONObject json = def.toJSON(null);
 				ValueCollection valueCollection = new ValueCollection();
 				valueCollection.SetStringValue("description", def.getDescription());
 				valueCollection.SetStringValue("name", def.getName());
